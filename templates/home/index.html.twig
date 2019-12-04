@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'acceuil{% endblock %}
+
+{% block body %}
+<header>
+        <h1>Profil de Nidal BEKKALI</h1>
+    </header>
+    
+    <section>
+        <div class="photo">
+            <img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.0-9/12920375_10154148146409887_3692705490992607334_n.jpg?_nc_cat=108&_nc_ohc=brBZnXoUxoMAQn5Mz34R3xGEIIoP7FOpMbt0J8YBAlFH8-v8fMgcvOgDg&_nc_ht=scontent-mrs2-1.xx&oh=2c882570adc3a376fba69286418b2e65&oe=5E4332D0" alt="Ma photo de profil">
+        </div>
+        <div class="prez">
+            <h2>Qui suis-je ?</h2>
+            <p>Diplômé d'un master 2 "Génie Industriel" (Faculté des sciences et technique de Fes
+             ), étudiant en M2 master informatique Ips à la faculté des sciences de Montpellier , avec une double compétence , sérieux , motivé , dynamique , à la recherche d'un stage de fin d'étude pour la validation de mon Diplome.</p>
+            <a href="#" download>Télécharger mon CV</a>
+            </div>
+        <div class="contact">
+            <h2>Informations Contact et technique </h2>
+            <div class="contact-flex">
+                <p>Nom : </p>
+                <p>BEKKALI Nidal</p>
+            </div>
+            <div class="contact-flex">
+                <p>Adresse : </p>
+                <p>340 rue maurice et katia krafft 34090 Montpellier</p>
+            </div>
+            <div class="contact-flex">
+                <p>Téléphone :</p>
+                <p>06 68 87 52 45</p>
+            </div>
+            <div class="contact-flex">
+                <p>Mail : </p>
+                <p>bekkali.nidal0@gmail.com</p>
+            </div>
+            <div class="contact-flex">
+                <p>hobbis :</p>
+                <p>Natation , sports collectives , vidéos documentaires ... </p>
+            </div>
+            <div class="contact-flex">
+                <p>Compétances :</p>
+                <p>Java ee , Angular , symfony ..... </p>
+            </div>
+             <div class="contact-flex">
+                <p>Permis :</p>
+                <p>B</p>
+            </div>
+            <div class="contact-flex">
+                <p>mes Projets Informatique :</p>
+                <p><a href="{{path('projet')}}">Lien vers mes projets<a/><p/>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/nidal.bekkali"><img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/fb.png" alt="Logo Fb"></a>
+                
+                <a href="https://ma.linkedin.com/in/nidal-bekkali-64514a92"><img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/lk.png" alt="Logo Lk"></a>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}
