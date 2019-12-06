@@ -1,19 +1,119 @@
-// contient le style a afficher pour le format tablet et desktop
-
+// contient le style a afficher pour le format tablet 
+/*cela contient des modification par apport à la vue desktop concernant la taille des éléments du code pour que ça soit adapté 
+à l utilisation tablette  avec des modification de couleurs et de backround */
 body{
-  // affiche le bandeau du profiler de symfony en bleu sombre
-  .sf-toolbarreset{
-    background-color: #244657;
+  
+  *{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
   }
-  div{
-  background-color: rgb(16, 165, 24);
-   margin-top: 25px;
-    margin-bottom: 25px;
+ 
+  p{
+    font-size: 1em;
+    line-height: 1.5em;
   }
-  h1{
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  /*HEADER*/
+
+  // image de backround modifié
+  header{
+    width: 100%;
+    padding: 20px 0px;
+    background: url("https://previews.123rf.com/images/chfonk/chfonk1711/chfonk171100022/90837726-verdure-abstraite-flou-fond-plante-de-couverture-de-sol-moss-avec-effet-kal%C3%A9idoscope-.jpg") #4f4f4f;
+    box-shadow: 0px 0px 15px #333;
+  }
+  header{
+    border-bottom: 2px solid #fff;
+    height: 80px;
+  }
+  header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    font-weight:bold;
-    font-size: 25px;
-    color:black;
+  }
+  
+  /*SECTIONS*/
+  // modification taille d'ecriture
+  //modification couleur background des section
+
+  section{
+    font-size: 13px;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: rgb(144, 189, 179);
+  }
+
+  // with automatique du h2
+
+  section h2{
+    margin: 20px 0;
+    width: auto;
+  }
+  section > div{
+    width: 90%;
+  }
+  
+  /*SECTION INFOS*/
+  
+  .photo{
+    text-align: center;
+  }
+  .photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+  }
+  .prez{
+    border-bottom: 2px dashed #ccc;
+  }
+  .prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: rgb(56, 238, 0);
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+  }
+  .contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 15px;
+    
+  }
+  .contact-flex p:first-child{
+    flex: 0 0 40%;
+  }
+  .contact-flex p:last-child{
+    flex: 0 0 60%;
+  }
+  .social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+  }
+  
+  //modification taille des image 
+  .social img{
+    width: 30px;
+    height: 30px;
   }
 }

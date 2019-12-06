@@ -3,11 +3,7 @@
 // les règles dans ce fichier (desktop/global.scss) surcharge celles définit dans tablet/global.scss
 
 body{
-  // affiche le bandeau du profiler de symfony en vert sombre
-  // je surcharge la règle '.sf-toolbarreset' définit dans 'tablet/global.scss'
-  //.sf-toolbarreset{
-  //  background-color: #3c613c;
-  //}
+
   /*STYLES GENERAUX*/
 *{
   font-family: Avenir, sans-serif;
@@ -16,9 +12,7 @@ body{
   text-align: justify;
   box-sizing: border-box;
 }
-body{
-  background: #ededed;
-}
+
 p{
   font-size: 1em;
   line-height: 1.5em;
@@ -27,11 +21,11 @@ a{
   text-decoration: none;
   color: #000;
 }
-/*HEADER & FOOTER*/
-header, footer{
+/*HEADER*/
+header{
   width: 100%;
   padding: 20px 0px;
-  background: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/cv-cover.jpg") #4f4f4f;
+  background: url("https://www.letelegramme.fr/images/2018/08/03/la-meteo-devrait-etre-favorable-a-de-belles-observations_4101193.jpg") #4f4f4f;
   box-shadow: 0px 0px 15px #333;
 }
 header{
@@ -43,22 +37,15 @@ header h1{
   font-size: 1.5em;
   width: 90%;
   margin: 0 auto;
-}
-footer{
-  border-top: 2px solid #fff;
-}
-footer p{
-  width: 90%;
-  margin: 0 auto;
-  color: #fff;
   text-align: center;
-}
-footer a{
-  color: #fff;
 }
 
 /*SECTIONS*/
+
+/*Nos éléments section vont tous être des conteneurs flexibles et nous allons choisir l’axe horizontal comme axe principal avec justify-content : center*/
+/*Nos éléments section sont des conteneurs flexibles avec  display: flex*/
 section{
+  font-size: 15px;
   display: flex; 
   flex-flow: row wrap;
   justify-content: center;
@@ -75,11 +62,9 @@ section h2{
 section > div{
   width: 90%;
 }
-div{
-  background-color: white;
-  
-  }
+
 /*SECTION INFOS*/
+
 .photo{
   text-align: center;
 }
@@ -104,10 +89,20 @@ div{
   box-shadow: 0px 0px 10px #ccc;
   border-radius: 5px;
 }
+
+/*On cible ensuite le premier paragraphe de chaque conteneur flexible avec .
+contact-flex p:first-child pour lui attribuer une largeur de base égale à 40% du conteneur flexible et le dernier avec .
+contact-flex p:last-child pour lui attribuer une largeur de base égale à 60% du conteneur flexible. 
+Cela va permettre aux différents couples d’informations d’être bien alignés les uns sous les autres.*/
+
+/*On utilise align-items: center pour centrer les éléments en hauteur au cas où certains prendraient plusieurs lignes.*/
+
 .contact-flex{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  margin-top: 15px;
+  
 }
 .contact-flex p:first-child{
   flex: 0 0 40%;
@@ -125,32 +120,5 @@ div{
   height: 40px;
 }
 
-/*SECTION EXP ET FORMATION*/
-.exp{
-  display: flex;
-  flex-flow: row wrap;
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-.exp-info{
-  display: flex;
-  flex-flow: column wrap;
-}
-.exp-logo{
-  flex: 0 0 25%;
-  max-width: 100px;
-}
-.exp-info{
-  flex: 0 0 70%;
-  margin-left: auto;
-}
-.exp img{
-  width: 100%;
-}
-
-  
-  
-  
   
 }
